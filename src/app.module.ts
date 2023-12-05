@@ -17,7 +17,7 @@ import { ArticleTag } from './module/article-tag/entities/article-tag.entity';
     TypeOrmModule.forRoot({
       type: 'mysql',
       // host: '43.140.243.148',
-      host: '127.0.0.1',
+      host: 'mysql',
       port: 3306,
       username: 'root',
       // password: 'drowssapon321',

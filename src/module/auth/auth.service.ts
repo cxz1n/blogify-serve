@@ -15,7 +15,7 @@ export class AuthService {
     const user = await this.userService.findOne(username);
     const findPassword = await this.userService.findUserPassword(username);
     if (!user) {
-      throw new HttpException('用户不存在', HttpStatus.FORBIDDEN);
+      throw new HttpException('用户不存在！', HttpStatus.FORBIDDEN);
     } else {
       const match = await matchPwd(password, findPassword.password);
       if (match) {

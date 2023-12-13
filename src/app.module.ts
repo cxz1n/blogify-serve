@@ -16,11 +16,9 @@ import { ArticleTag } from './module/article-tag/entities/article-tag.entity';
   imports: [
     TypeOrmModule.forRoot({
       type: 'mysql',
-      // host: '43.140.243.148',
-      host: 'mysql',
+      host: '127.0.0.1',
       port: 3306,
       username: 'root',
-      // password: 'drowssapon321',
       password: 'root',
       database: 'blog',
       entities: [User, Article, Tag, ArticleTag],
